@@ -6,3 +6,5 @@ Mapping = steps 1-6
 Variant calling = steps 7-9
 
 Samtools statistics used to assess mapping quality
+
+Sample lists contain sampleIDs associated with each species
