@@ -22,3 +22,8 @@ gatk --java-options "-Xmx24g" VariantFiltration \
         -O A_caraya_filteredSNPS.vcf.gz \
         --filter-expression "QD < 2.0 || FS > 60.0 || SOR > 3.0 || MQ < 40.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0" \
         --filter-name "hardfilter"
+
+gatk --java-options "-Xmx24g" SelectVariants \
+        -V A_caraya_filteredSNPS.vcf.gz \
+        --exclude-filtered \
+        -O A_caraya_hardfiltered.vcf.gz
