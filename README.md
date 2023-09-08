@@ -53,7 +53,7 @@ Programs included: gatk AddorReplaceReadGroups, gatk BuildBamIndex
 
 ## Step 7: Haplotype Caller
 
-Initial variant calling per individual (long run step: 5-9 days)
+Initial variant calling per individual (long run step: 4-10 days)
 
 Programs included: gatk HaplotypeCaller
 
