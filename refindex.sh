@@ -15,6 +15,6 @@ REFs=*.fa.gz
 for REF in $REFs
 do
         gatk CreateSequenceDictionary -R ${REF}
-       /opt/apps/rhel7/bwa-0.7.17/bwa index ${REF}
-       /opt/apps/rhel7/samtools/bin/samtools faidx ${REF}
+        /opt/apps/rhel7/bwa-0.7.17/bwa index ${REF}
+        /opt/apps/rhel7/samtools/bin/samtools faidx ${REF}
 done
